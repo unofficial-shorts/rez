@@ -1,6 +1,9 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright Contributors to the Rez Project
 
+import ntpath
+
+ntpath.realpath = ntpath.abspath
 
 from rez.utils._version import _rez_version
 import rez.deprecations
